@@ -26,11 +26,4 @@ This is my **personal portfolio website**, designed to showcase my **skills**, *
 **Backend:** Python (Flask) *(if used)*  
 **Version Control:** Git & GitHub  
 
----
-
-## 🚀 Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Wasay-Nazim/My-portfolio.git
 
