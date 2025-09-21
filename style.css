@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
+  max-width: 100%;
 }
 
 *::-webkit-scrollbar {
@@ -328,6 +328,73 @@ nav ul li a.active {
     width: 50%;
   }
 }
+
+
+/* 🔹 Mobile Friendly Layout */
+@media (max-width: 600px) {
+  .page1 {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers horizontally */
+    justify-content: center; /* centers vertically */
+  }
+
+  .about-section {
+    padding: 2rem 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .field {
+    font-size: 22px;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .bio {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+    padding: 0;
+    max-width: 90%;
+  }
+
+  .download-cv {
+    display: block;
+    margin: 1rem auto 0 auto;
+    align-self: center;
+    font-size: 13px;       /* smaller text */
+    padding: 8px 16px;     /* smaller padding */
+    border-radius: 40px;   /* slightly smaller curve */
+    width: auto;           /* prevent it from stretching */
+    max-width: 70%;        /* keeps it balanced on small screens */
+  }
+
+  /* Hide floating dots on small screens (they cause overflow) */
+  .dot {
+    display: none;
+  }
+
+  .links {
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
 
 
 
@@ -916,4 +983,12 @@ footer {
 }
 body {
   cursor: none; 
+}
+@media (max-width: 1024px) {
+  .tag-cursor {
+    display: none; 
+  }
+  body {
+    cursor: auto; 
+  }
 }
