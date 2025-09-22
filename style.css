@@ -326,15 +326,14 @@ nav ul li a.active {
 }
 
 
-/* 🔹 Mobile Friendly Layout */
 @media (max-width: 600px) {
   .page1 {
     padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;   /* centers horizontally */
-    justify-content: center; /* centers vertically */
+    align-items: center; 
+    justify-content: center; 
   }
 
   .about-section {
@@ -372,14 +371,13 @@ nav ul li a.active {
     display: block;
     margin: 1rem auto 0 auto;
     align-self: center;
-    font-size: 13px;       /* smaller text */
-    padding: 8px 16px;     /* smaller padding */
-    border-radius: 40px;   /* slightly smaller curve */
-    width: auto;           /* prevent it from stretching */
-    max-width: 70%;        /* keeps it balanced on small screens */
+    font-size: 13px;       
+    padding: 15px 16px;    
+    border-radius: 40px;  
+    width: 30%;          
+    max-width: 70%;        
   }
 
-  /* Hide floating dots on small screens (they cause overflow) */
   .dot {
     display: none;
   }
@@ -391,8 +389,16 @@ nav ul li a.active {
   }
 }
 
-
-
+@media (max-width: 300px) {
+  .download-cv {
+    font-size: clamp(9px, 4vw, 12px); 
+    padding: 4px 8px;                 
+    border-radius: 20px;              
+    max-width: 90%;                  
+    overflow: hidden;                  
+    text-overflow: ellipsis;          
+  }
+}
 
 .page2 {
   background: #cffff5;
